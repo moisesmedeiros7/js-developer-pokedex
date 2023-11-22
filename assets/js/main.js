@@ -7,9 +7,8 @@ let offset = 0;
 
 function convertPokemonToLi(pokemon) {
     return `
-        <li class="pokemon ${pokemon.type}">
-            <a href="pokemon-details.html?id=${pokemon.number}">
-            
+        <li class="pokemon ${pokemon.type}">   
+        <a href="pokemon-details.html?id=${pokemon.number}">
                 <span class="number">#${pokemon.number}</span>
                 <span class="name">${pokemon.name}</span>
             
@@ -24,6 +23,20 @@ function convertPokemonToLi(pokemon) {
             </a> 
         </li>
     `
+}
+
+function pokemonDetail(id){
+    
+    
+
+    return 
+    `<span class="number">#${pokemon.number}</span>
+                <span class="name">${pokemon.name}</span>
+                
+                  <img src="${pokemon.photo}"
+                        alt="${pokemon.name}">
+    `       
+                
 }
 
 function loadPokemonItens(offset, limit) {
